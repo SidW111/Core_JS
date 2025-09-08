@@ -24,11 +24,22 @@ Person.prototype.greet = function () {
 
 //create instance of the person
 const person1 = new Person("sid", 22);
-const person2 = new Person("srushti", 23);
 
 //inherited method called
 person1.greet();
-person2.greet();
 
 //verify the prototype linkage
 console.log(Object.getPrototypeOf(person1) === Person.prototype);
+
+
+function Animal(type){
+  this.type = type;
+}
+
+Animal.prototype.AnimalType = function(){
+ return `The type of Animal is ${this.type}`
+}
+const dog = new Animal('dog')
+console.log(dog.AnimalType())
+
+console.log(Animal.prototype.hasOwnProperty('AnimalType'))
