@@ -1,5 +1,4 @@
-async function events() 
-{
+async function events() {
   console.log("start");
 
   setTimeout(() => {
@@ -19,13 +18,15 @@ async function events()
 //promise microtask
 //setTimeOut macrotask
 
-function asyawait(){async function sid() {
-  console.log("a");
-  await Promise.resolve();
-  console.log("b");
-}
+function asyawait() {
+  async function sid() {
+    console.log("a");
+    await Promise.resolve();
+    console.log("b");
+  }
 
-sid();
-console.log("c");}
+  sid();
+  console.log("c");
+}
 
 // asyawait()
