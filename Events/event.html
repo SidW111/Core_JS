@@ -18,8 +18,10 @@
     //the event will bubble up to the parent folder
     //to stop the propagation of the parent div which is bubbling up
     //due to the default nature of event i.e. bubbling
-    //to prevent that will use e.stopPropagation().
-    //it will directly capture the event and pass it down from the root to the DOM
+    //to prevent that will use e.stopPropagation()
+    //this will prevent the event from bubbling up to the parent.
+    //Capturing is a separate phase, enabled by passing { capture: true } in addEventListener
+
     document.getElementById("parent").addEventListener("click", (e) => {
       console.log("parent clicked");
     });
