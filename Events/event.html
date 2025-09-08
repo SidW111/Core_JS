@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="parent">
-        <button>Parent</button>
-        <div id="child">
-            <button>Child</button>
-        </div>
+      <button>Parent</button>
+      <div id="child">
+        <button>Child</button>
+      </div>
     </div>
-    
-</body>
-<script>
-    document.getElementById('parent').addEventListener('click',(e)=>{
-        console.log('parent clicked')
-    })
-    document.getElementById('child').addEventListener('click',(e)=> {
-        e.stopPropagation();
-        console.log('child clicked');
-    })
-</script>
+  </body>
+  <script>
+    //when the child div is clicked which is inside a parent div
+    //the event will bubble up to the parent folder
+    //to stop the propagation of the parent div which is bubbling up
+    //due to the default nature of event i.e. bubbling
+    //to prevent that will use e.stopPropagation().
+    //it will directly capture the event and pass it down from the root to the DOM
+    document.getElementById("parent").addEventListener("click", (e) => {
+      console.log("parent clicked");
+    });
+    document.getElementById("child").addEventListener("click", (e) => {
+      e.stopPropagation();
+      console.log("child clicked");
+    });
+  </script>
 </html>
