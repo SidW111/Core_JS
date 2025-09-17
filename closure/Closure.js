@@ -13,5 +13,3 @@ function Outer() {
 }
 
 const Name = Outer();
-mainName();
-
