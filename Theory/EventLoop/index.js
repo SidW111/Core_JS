@@ -1,3 +1,21 @@
+
+
+// JavaScript is single-threaded, so it can only run one task at a time.
+// To handle asynchronous operations, JavaScript uses the event loop,
+// which coordinates between the call stack, Web APIs, and queues.
+
+// Call Stack → executes functions in LIFO order.
+
+// Web APIs → provided by browser/Node (like setTimeout, DOM events, fetch).
+
+// Queues → tasks wait here before entering the stack.
+    // Microtask Queue → higher priority (Promises, queueMicrotask, MutationObserver).
+    // Macrotask Queue → lower priority (setTimeout, setInterval, I/O).
+
+// Event Loop → constantly checks if the stack is empty
+// and pushes tasks from the queues (micro first, then macro).
+
+
 //Event Loop
 
 //JS is a single threaded(it can execute only one task at a time).
