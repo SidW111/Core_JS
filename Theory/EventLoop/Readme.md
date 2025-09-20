@@ -1,5 +1,7 @@
 # Event loop Order (Browser)
 
+---
+
 ### 1 Call stack -> executes one function at a time (LIFO)
 
 ### 2 Web APIs -> handle async tasks (setTimeout, fetch, DOM events)
@@ -13,3 +15,5 @@
 ### 5 Macrotask queue (callback queue) -> setTimeout, setInterval, I/O
 
 ### Loop repeats 🔄
+
+---
