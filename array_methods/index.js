@@ -99,3 +99,27 @@ let arrr = [1,2,3,4]
 arrr.splice(2,1,99)
 
 // console.log(arrr)
+
+
+//.concat() merge the arrays
+let ar1 = [1,2];
+let ar2 = [3,4];
+ar1.concat(ar2)
+// const neArr= ar1.concat(ar2)
+// console.log(neArr)
+
+//.flat() flattens the nested arrays
+let newArr = [11,[22],[[33]]]
+newArr.flat(2)
+// const neww =newArr.flat()
+// console.log(neww)
+
+//.join() convert the array -> into strings
+let joinArr = ['a','b','c']
+joinArr.join('-')
+// console.log(['a','b','c'].join('-'))
+
+//.at() get element by the index(supports negative)
+let atArr = [1,2,3,4,5]
+let el = atArr.at(0)
+// console.log(el)
