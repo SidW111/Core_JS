@@ -1,12 +1,12 @@
 //shallow copy creates a new array or object, but it only duplicates
 //the top level properties
+
 //If any of these properties are references to the other obejcts 
 //or arrays(.i.e nested structure), the copy will still point to the same
 //underlying referenced object as the original
 
 //this means that the changes made to the nested object
 //within the copied structure will also affect the original object
-
 
 //this is getting the reference directly 
 //becuase the array is directly assigned to copyArr
@@ -15,7 +15,8 @@ const copyArr = arr // directly assigned shallow copy
 const copyArray = [...arr] //spread operator shallow copy
 const copyArrayM = Array.from(arr) // using Array.from method
 
-
+//in shallow copy even if the og object/array changes
+//the changes will directly reflect in the copied object/array
 copyArr[1] = 12;
 console.log(copyArr)
 console.log(arr)
