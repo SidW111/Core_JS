@@ -1,4 +1,4 @@
-//regular func have their own arguments object
+//regular functions have their own arguments object
 //functions have this which is depended on how the func is invoked
 
 //need to have implicit return keyword to return a value
