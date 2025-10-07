@@ -1,5 +1,5 @@
 //Spread Operator is used to expand an iterable elements
-//(like an array or a string) into its individual elements.
+//(like an array or a string) or an object into its individual elements.
 
 //deep copy
 // const oldNumber = [1, 2, 3];
@@ -66,3 +66,13 @@ merge two objects
 // };
 
 // console.log(userName);
+
+// const user = {
+//   namee: "Sid",
+//   city: "Navi Mumbai",
+//   street: "Highway",
+// };
+
+// const { namee, ...address } = user;
+
+// console.log(namee, address);
