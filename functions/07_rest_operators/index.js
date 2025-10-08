@@ -2,7 +2,6 @@
 
 //Defn:-Rest operator is used to gather multiple elements into an array
 
-
 // function sum(...nums) {
 //   let result = 0;
 
